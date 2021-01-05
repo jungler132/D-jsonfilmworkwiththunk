@@ -7,6 +7,10 @@ function reducerFav(state = initialState , action) {
         return {
             favData : [...state.favData , action.payload]
         }
+        case "DEL_FAV_M" :
+        return {
+            favData : action.payload
+        }
         default :
         return state;
     }

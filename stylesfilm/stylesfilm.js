@@ -75,7 +75,10 @@ modalViewInside:{
 XbuttontouchStyle:{
     alignItems:"flex-end"
 },
-
+checkForFavButtonStyle:{
+    borderStartColor:"white",
+    borderRadius:45
+}
 
 
 

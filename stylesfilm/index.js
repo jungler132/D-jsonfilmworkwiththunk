@@ -1,3 +1,4 @@
 import styles from './stylesfilm'
-const allStyles = {styles}
+import stylesone from './stylesfav'
+const allStyles = {styles , stylesone}
 export default allStyles

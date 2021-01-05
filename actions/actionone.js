@@ -15,3 +15,12 @@ export const setFavFilm = (img , nameM) => ({
         nameMovie : nameM
     }
 });
+export const SET_MOVIE_ASYNC = "SET_MOVIE_ASYNC"
+export const setMovieNameAsync = (movieName) => ({
+    type: SET_MOVIE_ASYNC,
+    payload: movieName
+})
+export const deleFromFav = (favoriteData , favoriteImage , favoriteName) => ({
+    type: "DEL_FAV_M",
+    payload: favoriteData.filter((filteredImage , filteredName) => (filteredImage.image != favoriteImage && filteredName.nameMovie != favoriteName))
+})
